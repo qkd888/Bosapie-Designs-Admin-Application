@@ -51,6 +51,11 @@
     <section class="product-availability" id="product-availability">
         <div class="container">
             <h1 class="productavail">Product Availability</h1>
+            <div class="button-group">
+                <button onclick="addProduct()">Add Product</button>
+                <button onclick="saveData()">Save Data</button>
+                <button onclick="deleteData()">Delete Data</button>
+            </div>
             <div class="responsive-table">
                 <table id="productTable">
                     <thead>
@@ -64,12 +69,6 @@
                     </thead>
                     <tbody></tbody>
                 </table>
-            </div>
-
-            <div class="button-group">
-                <button onclick="addProduct()">Add Product</button>
-                <button onclick="saveData()">Save Data</button>
-                <button onclick="deleteData()">Delete Data</button>
             </div>
         </div>
 
