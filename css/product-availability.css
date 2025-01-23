@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: "Poppins", sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+    background: #20211c;
+}
+
+.product-availability {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    margin-top: 15rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.productavail {
+    font-weight: normal;
+    color: #ddd;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: rgb(37, 36, 36);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 5px 8px 0px black inset;
+}
+
+th,
+td {
+    border: 1px solid #000000;
+    box-shadow: 0px 5px 8px 0px black;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #232121;
+    color: #ddd;
+    box-shadow: 0px 5px 8px 0px black;
+}
+
+td {
+    word-wrap: break-word;
+    color: #ddd;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background-color: #000500;
+    color: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.6s ease-in-out;
+    border: 1px solid #ddd;
+}
+
+button:hover {
+    background-color: #e90000;
+    transition: all 0.6s ease-in-out;
+    border: 1px solid #ff0000;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    th,
+    td {
+        padding: 10px;
+        font-size: 14px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    th,
+    td {
+        padding: 8px;
+        font-size: 12px;
+    }
+    button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: "Poppins", sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+
+/*************NAVBAR************/
+
+
+/*******************************/
+
+
+/*******************************/
+
+
+/*******************************/
+
+.navbar {
+    background-color: #20211c;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.logo {
+    width: 100%;
+    height: 70px;
+    background-image: url("../images/Untitled\ design.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0.5rem;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #c1bbbb;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease-in-out;
+    position: sticky;
+    width: 100%;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+    color: white;
+}
+
+.navbar .toggle-btn {
+    display: none;
+    float: right;
+    color: white;
+    font-size: 24px;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a {
+        display: none;
+    }
+    .navbar .toggle-btn {
+        display: block;
+    }
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #080808;
+    overflow-y: auto;
+    transition: 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+
+/**********MOBILE NAVBAR********/
+
+
+/*******************************/
+
+
+/*******************************/
+
+
+/*******************************/
+
+.mobile-nav a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #f1f1f1;
+    display: block;
+}
+
+.mobile-nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    border-radius: 50%;
+}
+
+.close-btn:hover {
+    color: #ddd;
+}
+
+
+/*************HERO************/
+
+
+/*****************************/
+
+
+/*****************************/
+
+
+/*****************************/
+
+
+/*****************************/
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #20211c;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/Untitled design.jpg");
+    background-size: contain;
+    /* Ensures the image covers the entire hero section */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    height: 100vh;
+}
