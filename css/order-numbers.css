@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -54,8 +55,8 @@ html {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background: rgb(0, 203, 0);
-    color: #000000;
+    background: #dddddd00;
+    color: #eceaea;
     border: 12px solid #000000;
     cursor: pointer;
     transition: background-color 0.7s;
@@ -63,11 +64,12 @@ html {
     box-shadow: 0px 2px 2px 0px black;
     border: none;
     border-radius: 5px;
+    font-weight: normal;
 }
 
 .grid-item.selected {
-    background-color: rgb(255, 1, 1);
-    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 .buttons {
@@ -106,6 +108,7 @@ html {
     .container {
         padding: 1rem;
     }
+
     .btn {
         padding: 0.5rem;
     }
