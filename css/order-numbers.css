@@ -28,6 +28,7 @@ html {
 .order-numbers-h1 {
     letter-spacing: normal;
     color: #ddd;
+    margin-bottom: 1rem;
 }
 
 .order-number-container {
