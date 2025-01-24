@@ -68,8 +68,8 @@ html {
 }
 
 .grid-item.selected {
-    background-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
+    background-color: white;
+    color: rgba(255, 255, 255, 0);
 }
 
 .buttons {
