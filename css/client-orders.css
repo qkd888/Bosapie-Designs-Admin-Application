@@ -166,7 +166,7 @@ th {
 .btn:hover {
     background: #000000;
     color: white;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
 }
 
 .btn-add,
@@ -175,7 +175,6 @@ th {
 .btn-pdf {
     background-color: #00000000;
     color: white;
-    border: 1px solid #ddd;
 }
 
 .btn-delete:hover,
@@ -183,7 +182,7 @@ th {
 .btn-pdf:hover {
     background: #000000;
     color: white;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
 }
 
 @media (max-width: 600px) {

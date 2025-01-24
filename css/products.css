@@ -116,29 +116,18 @@ html {
 }
 
 
-/**********PRODUCTS***********/
-
-
-/*****************************/
-
-
-/*****************************/
-
-
-/*****************************/
+/* Products */
 
 .container {
     padding: 2rem;
     text-align: center;
-    padding: 2rem;
     border-radius: 8px;
     width: 100%;
     height: 100vh;
     justify-content: flex-start;
     overflow-y: auto;
-    /* Enable vertical scrolling */
     margin-top: 5rem;
-    background: #20211C;
+    background: #20211c;
 }
 
 .products-page-h1 {
@@ -146,34 +135,30 @@ html {
     margin-top: -1rem;
     width: 100%;
     color: #ddd;
+    margin-bottom: 1rem;
 }
 
 h2 {
-    color: #000000;
+    color: #000;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 1rem;
-    top: 0;
 }
 
 th,
 td {
-    border: 1px solid #000000;
+    border: 1px solid #000;
     padding: 8px;
     text-align: center;
-    border-bottom: 5px solid black;
-    box-shadow: 0px 5px 8px 0px black;
     background: #20211c;
     color: #ddd;
 }
 
 th {
-    background-color: #20211c;
-    box-shadow: 0px 5px 5px 0px black;
-    margin-top: 15rem;
+    background-color: #181a15;
     color: #ddd;
 }
 
@@ -187,40 +172,40 @@ th {
 }
 
 .btn-add {
-    background-color: #020202;
+    background-color: #02020200;
     color: white;
-    transition: all 0.5s ease-in-out;
-    border: 1px solid #ddd;
+    transition: all 0.4s ease-in-out;
 }
 
 .btn-add:hover {
-    background: #e70909;
-    transition: all 0.6s ease-in-out;
-    border: 1px solid #ff0000;
+    background: #000000;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid #ffffff;
+    color: white;
 }
 
 .btn-delete {
-    background-color: #000000;
+    background-color: #000;
     color: white;
 }
 
 .btn-delete:hover {
-    background-color: #fc0606;
+    background: #000000;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid #ffffff;
     color: white;
-    transition: background-color 0.3s;
-    border: 1px solid #ff0000;
 }
 
 .btn-save {
-    background-color: #000000;
+    background-color: #00000000;
     color: white;
-    border: 1px solid #ddd;
 }
 
 .btn-save:hover {
-    background: #e70909;
-    transition: all 0.6s ease-in-out;
-    border: 1px solid #ff0000;
+    background: #000000;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid #ffffff;
+    color: white;
 }
 
 .image-preview {
@@ -236,5 +221,34 @@ th {
 
     .btn {
         padding: 0.5rem;
+    }
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    th,
+    td {
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+        text-align: right;
+    }
+
+    th,
+    td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    th {
+        display: none;
     }
 }

@@ -50,7 +50,11 @@
         <section class="made-by-us" id="made-by-us">
 
             <h1>Made by Us</h1>
-            <button class="btn btn-add" onclick="addProduct()">Add Product</button>
+            <div class="btngroup2">
+                <button class="btn btn-add" onclick="addProduct()">Add Product</button>
+                <button class="btn btn-save" onclick="saveData()">Save Data</button>
+            </div>
+
             <table id="productTable">
                 <thead>
                     <tr>
@@ -65,8 +69,6 @@
                     <!-- Products will be added here -->
                 </tbody>
             </table>
-            <button class="btn btn-save" onclick="saveData()">Save Data</button>
-
             <div id="myModal" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal()">&times;</span>
