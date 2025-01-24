@@ -72,3 +72,25 @@ function loadData() {
         });
     }
 }
+
+document.getElementById('searchInput').addEventListener('keyup', function() {
+    var input = document.getElementById('searchInput');
+    var filter = input.value.toLowerCase();
+    var rows = document.getElementById('productTable').getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+
+    for (var i = 0; i < rows.length; i++) {
+        var cells = rows[i].getElementsByTagName('td');
+        var match = false;
+        for (var j = 0; j < cells.length; j++) {
+            if (cells[j].innerHTML.toLowerCase().indexOf(filter) > -1) {
+                match = true;
+                break;
+            }
+        }
+        if (match) {
+            rows[i].style.display = '';
+        } else {
+            rows[i].style.display = 'none';
+        }
+    }
+});

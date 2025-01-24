@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -35,59 +36,60 @@ html {
     max-width: 1000px;
 }
 
-.productavail {
-    font-weight: normal;
-    color: #ddd;
-    font-weight: bold;
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-    background-color: rgb(37, 36, 36);
+    background-color: white;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0px 5px 8px 0px black inset;
+    box-shadow: 0px 6px 10px 0px black;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #ddd;
 }
 
 th,
 td {
-    border: 1px solid #000000;
-    box-shadow: 0px 5px 8px 0px black;
+    border: 1px solid #dddddd4d;
     padding: 12px;
     text-align: left;
 }
 
 th {
-    background-color: #232121;
+    background-color: #20211C;
     color: #ddd;
-    box-shadow: 0px 5px 8px 0px black;
 }
 
 td {
     word-wrap: break-word;
+    background-color: #20211C;
     color: #ddd;
 }
 
 button {
-    padding: 10px;
+    padding: 12px 24px;
     margin: 5px;
     border: none;
-    background-color: #000500;
+    background-color: #ffffff00;
+    border: 1px solid #ddd;
     color: #ddd;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 15px;
-    transition: all 0.6s ease-in-out;
-    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 6px 10px 0px black;
     margin-bottom: 1rem;
 }
 
 button:hover {
-    background-color: #e90000;
-    transition: all 0.6s ease-in-out;
-    border: 1px solid #ff0000;
+    background-color: #ff0101;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(255, 254, 254);
+    transition: all 0.5s ease-in-out;
 }
 
 .button-group {
@@ -98,11 +100,13 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+
     th,
     td {
         padding: 10px;
         font-size: 14px;
     }
+
     button {
         padding: 10px 20px;
         font-size: 14px;
@@ -110,17 +114,32 @@ button:hover {
 }
 
 @media (max-width: 480px) {
+
     th,
     td {
         padding: 8px;
         font-size: 12px;
     }
+
     button {
         padding: 8px 16px;
         font-size: 12px;
     }
+
     .button-group {
         flex-direction: column;
         align-items: center;
     }
+}
+
+.search-box {
+    background: #20211C;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 6px 10px 0px black;
 }
