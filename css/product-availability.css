@@ -133,6 +133,7 @@ button:hover {
 
 .search-box {
     background: #20211C;
+    colour: #ddd;
     margin-bottom: 20px;
     padding: 10px;
     font-size: 16px;
